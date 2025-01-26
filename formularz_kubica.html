@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubica Formularz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px; 
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea {
+            margin-bottom: 15px;
+            padding: 5px;
+        }
+
+        .horizontal {
+            display: flex;
+            align-items: center;
+        }
+
+        .horizontal label {
+            margin-right: 10px;
+        }
+
+       
+        h1 {
+            font-size: 24px; 
+            margin-bottom: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularz o zainteresowaniach</h1> <!-- Tytuł formularza -->
+    <form>
+        
+        <label for="imie">Imię:</label>
+        <input type="text" id="imie" name="imie" placeholder="Wpisz swoje imię">
+
+       
+        <label for="pytanie1">Jakie jest Twoje ulubione hobby?</label>
+        <textarea id="pytanie1" name="pytanie1" rows="3" placeholder="Wpisz odpowiedź..."></textarea>
+
+       
+        <label for="zainteresowania">Wybierz co lubisz robić bardziej:</label>
+        <div>
+            <input type="checkbox" id="sport" name="zainteresowania" value="sport">
+            <label for="sport">Sport</label>
+
+            <input type="checkbox" id="muzyka" name="zainteresowania" value="muzyka">
+            <label for="muzyka">Muzyka</label>
+
+            <input type="checkbox" id="sztuka" name="zainteresowania" value="gry">
+            <label for="gry">gry</label>
+        </div>
+
+       
+        <div class="horizontal">
+            <label for="opcje">Wybierzsport który lubisz najbardziej:</label>
+            <input type="radio" id="opcja1" name="piłka nożna" value="1">
+            <label for="opcja1">piłka nożna</label>
+
+            <input type="radio" id="opcja2" name="pływania" value="2">
+            <label for="opcja2">pływania</label>
+
+            <input type="radio" id="opcja3" name="biegi" value="3">
+            <label for="opcja3">biegi</label>
+        </div>
+
+        
+        <label for="lista">jakie gry wolisz</label>
+        <select id="lista" name="lista">
+            <option value=""> Wybierz </option>
+            <option value="1">dynamicze</option>
+            <option value="2">strategiczne</option>
+            <option value="3">relaksujące</option>
+        </select>
+
+        
+        <button type="submit">Wyślij</button>
+    </form>
+</body>
+</html>
+
+
+
+
